@@ -1,4 +1,4 @@
-package edu.lina1.excercises_00;
+package edu.lina1.Excercises_00;
 
 public class myProgram {
     
