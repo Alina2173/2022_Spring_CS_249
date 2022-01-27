@@ -2,7 +2,7 @@ package edu.realemj.Exercises_01;
 
 public class PersonProgram {
     public static void main(String [] args) {
-
+        // Create persons and set ages
         Person bob = new Person();
         bob.setAge(20);
         System.out.println(bob.getAge());

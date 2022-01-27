@@ -2,7 +2,7 @@ package edu.realemj.Exercises_01;
 
 public class Person {
     private int age;
-
+    
     public int getAge() {
         return age;
     }
@@ -12,6 +12,8 @@ public class Person {
     }   
     
     public static int calcMonths(int years) {
-        return years*12;
+        // Calculate months
+        int m = years*12;
+        return m;
     }
 }
