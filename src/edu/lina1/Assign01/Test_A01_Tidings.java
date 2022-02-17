@@ -1,6 +1,6 @@
-package edu.realemj.Assign01;
+package edu.lina1.Assign01;
 // NOTE: CHANGE realemj to YOUR SITNETID!!!
-import edu.realemj.Testing.*;
+import edu.lina1.Testing.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
