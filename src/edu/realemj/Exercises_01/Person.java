@@ -39,4 +39,12 @@ public class Person {
         int m = years*12;
         return m;
     }
+
+    public String toString() {
+        String s = name + ", age " + age;
+        if(!alive) {
+            s += " (deceased)";
+        }
+        return s;
+    }
 }
