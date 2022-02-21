@@ -5,6 +5,10 @@ import java.util.Scanner;
 public class CharGen {
     public static void main (String [] args){
 
+        //Have to have initial variable
+        int strength = 0;
+        int wisdom = 0;
+
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter seed:");
@@ -18,55 +22,33 @@ public class CharGen {
 
         while((className.equals("RANGER"))||(className.equals("WIZARD")) || (className.equals("WARRIOR")) || (className.equals("PEASANT"))){
 
-    
-
             //System.out.println("TEST classname: " + className);
             
             if (className.equals("RANGER")){
-                int strength = 50;
-                int wisdom = 50;
-
-                strength = strength + rand.nextInt(51);
-                wisdom = wisdom + rand.nextInt(51);
-    
-                System.out.println("CLASS: " + className);
-                System.out.println("STRENGTH: " + strength);
-                System.out.println("WISDOM: " + wisdom);
+                strength = 50;
+                wisdom = 50;
 
             }else if(className.equals("WIZARD")){
-                int strength = 0;
-                int wisdom = 50;
+                strength = 0;
+                wisdom = 50;
                 
-                strength = strength + rand.nextInt(51);
-                wisdom = wisdom + rand.nextInt(51);
-    
-                System.out.println("CLASS: " + className);
-                System.out.println("STRENGTH: " + strength);
-                System.out.println("WISDOM: " + wisdom);
-
             }else if(className.equals("WARRIOR")){
-                int strength = 50;
-                int wisdom = 0;
-
-                strength = strength + rand.nextInt(51);
-                wisdom = wisdom + rand.nextInt(51);
-    
-                System.out.println("CLASS: " + className);
-                System.out.println("STRENGTH: " + strength);
-                System.out.println("WISDOM: " + wisdom);
+                strength = 50;
+                wisdom = 0; 
 
             }else if(className.equals("PEASANT")){ 
-                int strength = 0;
-                int wisdom = 0;
+                strength = 0;
+                wisdom = 0;
 
-                strength = strength + rand.nextInt(51);
-                wisdom = wisdom + rand.nextInt(51);
-    
-                System.out.println("CLASS: " + className);
-                System.out.println("STRENGTH: " + strength);
-                System.out.println("WISDOM: " + wisdom);
             }
-            
+
+            strength = strength + rand.nextInt(51);
+            wisdom = wisdom + rand.nextInt(51);
+    
+            System.out.println("CLASS: " + className);
+            System.out.println("STRENGTH: " + strength);
+            System.out.println("WISDOM: " + wisdom);
+
         
             System.out.println("Enter class:");
             className = input.next();

@@ -1,6 +1,5 @@
 package edu.lina1.Assign03;
-
-import java.util.Scanner;
+import java.util.*;
 
 public class LOTRQuiz {
     public static void main (String [] args) {
