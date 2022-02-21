@@ -1,4 +1,4 @@
-package edu.lina1.Exercises_07;
+package edu.realemj.Exercises_07;
 import java.util.*;
 
 public class ScannerProblems {
@@ -7,6 +7,11 @@ public class ScannerProblems {
         int num = in.nextInt();
         return num;
     }
+
+    public static <T> void myFunc(T x) {
+
+    }
+
     public static void main(String [] args) {
         Scanner input = new Scanner(System.in);
 

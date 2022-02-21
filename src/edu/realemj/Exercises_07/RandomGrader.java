@@ -1,4 +1,4 @@
-package edu.lina1.Exercises_07;
+package edu.realemj.Exercises_07;
 import java.util.*;
 
 public class RandomGrader {

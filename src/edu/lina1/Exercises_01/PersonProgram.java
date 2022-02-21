@@ -1,4 +1,4 @@
-package edu.realemj.Exercises_01;
+package edu.lina1.Exercises_01;
 
 public class PersonProgram {
     public static void main(String [] args) {

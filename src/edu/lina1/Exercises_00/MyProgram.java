@@ -1,6 +1,6 @@
 package edu.lina1.Exercises_00;
 
-import edu.realemj.Exercises_01.*;
+import edu.lina1.Exercises_01.*;
 
 public class MyProgram {
     public static void main(String [] args) {
