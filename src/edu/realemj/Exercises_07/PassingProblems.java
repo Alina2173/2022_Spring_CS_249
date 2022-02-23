@@ -1,5 +1,5 @@
 package edu.realemj.Exercises_07;
-import edu.lina1.Exercises_01.*;
+import edu.realemj.Exercises_01.*;
 
 public class PassingProblems {
     public static void doesNothing(int x) {

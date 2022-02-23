@@ -1,4 +1,4 @@
-package edu.lina1.Exercises_06;
+package edu.realemj.Exercises_06;
 import java.util.*;
 
 public class L33tSpeak {
