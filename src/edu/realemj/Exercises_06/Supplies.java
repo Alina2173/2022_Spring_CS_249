@@ -41,5 +41,22 @@ public class Supplies {
         s += "Axles: " + totalAxles + "\n";
         return s;
     }
+
+    public boolean eatDaysRations(int partyCnt) {
+        double RATIONS = 2.0;
+        double foodToEat = partyCnt * RATIONS;
+        if(foodToEat > totalFood) {
+            totalFood = 0;
+            return false;
+        }
+        else {
+            totalFood -= foodToEat;
+            return true;
+        }
+    }    
+
+    public boolean areOutOfFood() {
+        return (totalFood <= 0);
+    }
     
 }

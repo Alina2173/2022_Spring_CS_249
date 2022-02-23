@@ -2,15 +2,16 @@ package edu.realemj.Exercises_06;
 import java.util.*;
 
 public class GeneralStore {
+    private String name;
 
-    public static void main(String [] args) {
-        Supplies supplies = new Supplies();
+    public GeneralStore(String n) {
+        name = n;
+    }
 
-        Scanner input = new Scanner(System.in);
-
+    public void visit(Scanner input, Supplies supplies) {
         boolean validItem = true;
 
-        System.out.println("Welcome to Mr. Do-While's General Store!");
+        System.out.println("Welcome to " + name + "!");
 
         do {
             System.out.println("What do you want to buy?");
@@ -34,5 +35,12 @@ public class GeneralStore {
 
         System.out.println("Thank you! Come again!");
     }
-    
+
+
+    public static void main(String [] args) {
+        Supplies supplies = new Supplies();
+        Scanner input = new Scanner(System.in);
+        GeneralStore store = new GeneralStore("Mr. Do-While's General Store");
+        store.visit(input, supplies);        
+    }    
 }

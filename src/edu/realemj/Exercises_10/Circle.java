@@ -32,4 +32,8 @@ public class Circle {
     public void setCenter(double x, double y) {
         center.setPos(x, y);
     }
+
+    public double getArea() {
+        return radius*radius*Math.PI;
+    }
 }
