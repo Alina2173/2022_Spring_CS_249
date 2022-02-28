@@ -9,6 +9,10 @@ public class Person {
         name = "";
     }
 
+    public Person(String n) {
+        name = n;
+    }
+
     public Person(String n, int a) {
         name = n;
         age = a;
@@ -32,6 +36,10 @@ public class Person {
 
     public boolean isAlive() {
         return alive;
+    }
+
+    public void murder() {
+        alive = false;
     }
     
     public static int calcMonths(int years) {
