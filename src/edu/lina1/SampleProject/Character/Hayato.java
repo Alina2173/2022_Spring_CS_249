@@ -19,6 +19,9 @@ public class Hayato {
         inGameName = n;
     }
 
+    public String getNickname() {
+        return inGameName;
+    }
     public void setChar() {
 
     }

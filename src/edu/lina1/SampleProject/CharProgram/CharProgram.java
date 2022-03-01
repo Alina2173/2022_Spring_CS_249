@@ -14,7 +14,7 @@ public class CharProgram {
 
         alice.setNickname(nickname);
 
-        
+        System.out.print("Hayato's IGN: " + alice.getNickname());
 
         
     }
