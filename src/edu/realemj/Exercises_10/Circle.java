@@ -4,19 +4,30 @@ public class Circle {
     private double radius;
     private Point2D center = new Point2D();
 
-    public Circle() {}
+    public Circle() {
+        // Call most general version
+        this(1.0, new Point2D());        
+    }
 
-    public Circle(double r, Point2D p) {
-        setRadius(r);
-        setCenter(p);
+    public Circle(double radius) {
+        this(radius, new Point2D());
+    }
+
+    public Circle(Point2D center) {
+        this(1.0, center);
+    }
+
+    public Circle(double radius, Point2D center) {
+        setRadius(radius);
+        setCenter(center);
     }
 
     public double getRadius() {
         return radius;
     }
 
-    public void setRadius(double r) {
-        radius = Math.max(r, 0);
+    public void setRadius(double radius) {
+        this.radius = Math.max(radius, 0);
     }
 
     public Point2D getCenter() {
@@ -24,9 +35,9 @@ public class Circle {
         return new Point2D(center.getX(), center.getY());
     }    
 
-    public void setCenter(Point2D p) {
+    public void setCenter(Point2D center) {
         //center = p;
-        center.setPos(p.getX(), p.getY());
+        this.center.setPos(center.getX(), center.getY());
     }
 
     public void setCenter(double x, double y) {
