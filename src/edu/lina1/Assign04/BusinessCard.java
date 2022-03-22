@@ -78,7 +78,11 @@ public class BusinessCard {
         //2nd line + name
         s += boundary + String.format(format, " " + name) + boundary + "\n";
 
-        //4 lines for slogan
+        //3rd line, blank
+        s += boundary + String.format(format, " ") + boundary + "\n";
+
+
+        //4-7th lines for slogan
         for(int i = 0; i < sloganLines.length; i++) {
 			s += boundary + String.format(format," "+ sloganLines[i]) + boundary + "\n";
 		}
