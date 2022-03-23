@@ -9,6 +9,9 @@ public class BusinessCard {
     //the boundary character
     private char boundary;
 
+    //slogan line counter
+    private int cnt = 0;
+
     //Constructor for BusinessCard
     public BusinessCard(String name, String [] sloganLines, char boundaryChar){
         setName(name);
@@ -29,8 +32,15 @@ public class BusinessCard {
 
     //return stored slogan in a single string
     public String getSlogan(){
+        String tempSlogan = "";
+
+        for (int i = 0; i < cnt; i++){
+            tempSlogan += sloganLines[i] + "\n";
+        }
+
+        return tempSlogan;
         
-        return String.join("\n", sloganLines);
+        //return String.join("\n", sloganLines);
         
     }
 
@@ -51,6 +61,8 @@ public class BusinessCard {
         for (int i = 0; i < 4; i++){
             if(i < sloganLines.length) {
 				this.sloganLines[i] = sloganLines[i];
+                //counter
+                cnt += 1;
 			}else {
 				this.sloganLines[i] = "";
 			}
