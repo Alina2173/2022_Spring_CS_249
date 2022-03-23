@@ -5,16 +5,16 @@ public class PrintShop {
 
 
     public static BusinessCard askForBusinessCardData(Scanner input){
-        System.out.println("Enter business name: ");
+        System.out.println("Enter business name:");
         String name = input.nextLine();
 
-        System.out.println("Enter boundary character: ");
-        char boundaryChar = input.next().charAt(0);
+        System.out.println("Enter boundary character:");
+        char boundaryChar = input.nextLine().charAt(0);
         //setBoundaryChar(input.next().charAt(0));
 
         //ask user for slogan lines and store into array
         String [] sloganLines = new String[4];
-        System.out.println("Enter slogan (max 4 lines): ");
+        System.out.println("Enter slogan (max 4 lines):");
         for (int i = 0; i < 4 ; i++){
             sloganLines[i] = input.nextLine();
         }
@@ -32,16 +32,7 @@ public class PrintShop {
 		System.out.println("Your new business card:");
 		System.out.println(card);
         
-        
-        
-        //BusinessCard b = askForBusinessCardData(input);
-
-        //System.out.println("name:" + b.getName());
-        //System.out.println("slogan:" + b.getSlogan());
-
-
-        //input.n
-        //business.setBoundaryChar(input.next().charAt(0));
+    
     }
 
 
