@@ -10,6 +10,10 @@ public class Point2D {
         setPos(nx, ny);
     }
 
+    public Point2D(Point2D other) {
+        setPos(other);
+    }
+
     public double getX() {
         return x;
     }
@@ -30,5 +34,15 @@ public class Point2D {
         setX(nx);
         setY(ny);
     }
-    
+
+    public void setPos(Point2D other) {
+        //setX(other.getX());
+        //setY(other.getY());
+        setX(other.x);
+        setY(other.y);
+    }    
+
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
 }
