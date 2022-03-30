@@ -27,5 +27,17 @@ public class Shape {
 
     public Point2D getCenter() {
         return new Point2D(center);
-    }    
+    }  
+    
+    public String toString() {
+        String s = "";
+        if(filled) {
+            s += "Filled ";
+        }
+        else {
+            s += "Empty ";
+        }
+        s += "shape at " + center;
+        return s;
+    }
 }

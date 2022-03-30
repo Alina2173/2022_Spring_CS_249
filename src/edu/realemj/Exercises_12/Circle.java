@@ -9,14 +9,15 @@ public class Circle extends Shape {
         radius = 1.0;
     }
 
-    public Circle(double radius) {
+    public Circle(double radius) {        
         this.radius = radius;
     }
 
     public Circle(double radius, boolean filled, Point2D center) {
+        super(filled, center);
         this.radius = radius;
-        setFilled(filled);
-        setCenter(center);
+        //setFilled(filled);
+        //setCenter(center);
     }
 
     public double getRadius() {
@@ -26,4 +27,11 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
         this.radius = Math.max(radius, 0);
     }    
+
+    @Override
+    public String toString() {
+        String s = super.toString();
+        s += " which is a circle with radius " + radius;
+        return s;
+    }
 }
