@@ -34,4 +34,16 @@ public class Circle extends Shape {
         s += " which is a circle with radius " + radius;
         return s;
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if(other instanceof Circle c) {
+            final double ERROR = 1e-15;
+            return (Math.abs(radius - c.radius) < ERROR &&
+                    super.equals(other));
+        }
+        else { 
+            return false;
+        }
+    }
 }

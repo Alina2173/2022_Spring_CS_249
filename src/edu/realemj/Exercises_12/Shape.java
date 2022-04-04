@@ -40,4 +40,14 @@ public class Shape {
         s += "shape at " + center;
         return s;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Shape s) {
+            return (filled == s.filled && center.equals(s.center));
+        }
+        else {
+            return false;
+        }
+    }
 }

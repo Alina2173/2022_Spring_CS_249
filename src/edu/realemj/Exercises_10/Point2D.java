@@ -45,4 +45,17 @@ public class Point2D {
     public String toString() {
         return "(" + x + "," + y + ")";
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Point2D p) {
+            final double ERROR = 1e-15;
+
+            return (Math.abs(x - p.x) < ERROR &&
+                    Math.abs(y - p.y) < ERROR);
+        }
+        else {
+            return false;
+        }
+    }
 }
