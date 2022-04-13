@@ -1,5 +1,7 @@
 package edu.realemj.Exercises_13;
 
+import java.util.Scanner;
+
 public class Point3D {
     private double x;
     private double y;
@@ -13,6 +15,25 @@ public class Point3D {
 
     public Point3D(Point3D other) {
         setPos(other);
+    }
+
+    public Point3D(String s) {
+        this(new Scanner(s));
+        //Scanner tokens = new Scanner(s);
+        //ouble x = tokens.nextDouble();
+        //double y = tokens.nextDouble();
+        //double z = tokens.nextDouble();
+        //setPos(x,y,z);
+    }
+
+    public Point3D(Scanner tokens) {
+        double x = tokens.nextDouble();
+        double y = tokens.nextDouble();
+        double z = tokens.nextDouble();
+        setPos(x,y,z);
+        // setPos(    tokens.nextDouble(),
+        //            tokens.nextDouble(),
+        //            tokens.nextDouble());
     }
 
     public double getX() {
@@ -69,5 +90,9 @@ public class Point3D {
         else {
             return false;
         }
+    }
+
+    public void scaleY(double factor) {
+        y = factor*y;
     }
 }
