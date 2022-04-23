@@ -56,6 +56,6 @@ public class CharGen {
         }
 
         System.err.println("UNKNOWN CLASS: " + className);
-        
+        input.close();
     }
 }

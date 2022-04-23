@@ -1,10 +1,8 @@
-package edu.lina1.Assign05;
+package edu.lina1.Assign08;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import edu.lina1.Assign08.CharImage;
-
-public class Test_A05_CharImage {
+public class Test_A07_CharImage {
     
     @DataProvider(name="mapGen")
     public Object[][] mapGen() {

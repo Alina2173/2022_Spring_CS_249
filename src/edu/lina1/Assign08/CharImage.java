@@ -1,4 +1,4 @@
-package edu.lina1.Assign05;
+package edu.lina1.Assign08;
 
 public class CharImage {
 

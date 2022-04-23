@@ -24,5 +24,6 @@ public class VitalStats {
         System.out.println("HEIGHT: " + feet + "'-" + leftoverInches + "\"");
         System.out.println("BMI: " + BMI);
 
+        input.close();
     }
 }
