@@ -10,6 +10,10 @@ public class Point2D {
         setPos(nx, ny);
     }
 
+    public Point2D(Point2D other) {
+        setPos(other);
+    }
+
     public double getX() {
         return x;
     }
@@ -30,5 +34,28 @@ public class Point2D {
         setX(nx);
         setY(ny);
     }
-    
+
+    public void setPos(Point2D other) {
+        //setX(other.getX());
+        //setY(other.getY());
+        setX(other.x);
+        setY(other.y);
+    }    
+
+    public String toString() {
+        return "(" + x + "," + y + ")";
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj instanceof Point2D p) {
+            final double ERROR = 1e-15;
+
+            return (Math.abs(x - p.x) < ERROR &&
+                    Math.abs(y - p.y) < ERROR);
+        }
+        else {
+            return false;
+        }
+    }
 }
