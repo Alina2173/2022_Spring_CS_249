@@ -94,23 +94,30 @@ public class TreasureMap extends CharImage{
         
 
     }
+    //
 
     public void loadInstructions(String filename) throws TreasureMapException{
         //catching instantly
         try(
-            Scanner input = new Scanner(new File(filename))
-        ){  
-            
+            //have put full path 
+            Scanner input = new Scanner(new File("C:/Users/wavyc/Desktop/2022Spring/2022_Spring_CS_249/src/edu/lina1/Assign07/" + filename))
+        ){
+           
+            //File file = new File("C:/Users/wavyc/Desktop/2022Spring/2022_Spring_CS_249/src/edu/lina1/Assign07/" + filename);
+           
+            //Scanner input = new Scanner(file);
+            //System.out.println(file.exists());
+
             while(input.hasNextLine()){
                 parseDirection(input.nextLine());
                 
             }
 
-            setPos(getCurRow(), getCurCol(), 'X');
+            super.setPos(getCurRow(), getCurCol(), 'X');
         
         }catch(Exception e){
-            //clear();
-            //throw new TreasureMapException("YE CANNOT READ THIS MAP!", e);
+            clear();
+            throw new TreasureMapException("YE CANNOT READ THIS MAP!", e);
 
         }
 

@@ -24,7 +24,8 @@ public class CavernGame {
 		    String levelName = inputUser.nextLine();
 
 		    // Open level file
-			Scanner levelFile = new Scanner(new File(levelName));
+			//Edited for full path -lina1
+			Scanner levelFile = new Scanner(new File("C:/Users/wavyc/Desktop/2022Spring/2022_Spring_CS_249/src/edu/lina1/Assign08/" + levelName));
 
 			// Read in the number of lines in the file
 		    int numLines = levelFile.nextInt();

@@ -10,7 +10,7 @@ public class Skeleton extends Creature{
     }
 
     public String toString(){
-        return "Skeleton at" + getRow() + "," + getCol();
+        return "Skeleton at " + getRow() + "," + getCol();
     }
     
     public void draw(CharImage map){
